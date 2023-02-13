@@ -68,6 +68,36 @@ namespace RegistroOcupacion.Migrations
 
                     b.ToTable("Personas");
                 });
+
+            modelBuilder.Entity("Prestamos", b =>
+                {
+                    b.Property<int>("PrestamoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Concepto")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Monto")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PersonaId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("Vence")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("PrestamoId");
+
+                    b.ToTable("Prestamos");
+                });
 #pragma warning restore 612, 618
         }
     }

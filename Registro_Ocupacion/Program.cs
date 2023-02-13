@@ -19,6 +19,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 
 builder.Services.AddScoped<OcupacionesBLL>();
 builder.Services.AddScoped<PersonasBLL>();
+builder.Services.AddScoped<PrestamosBLL>();
 builder.Services.AddScoped<NotificationService>();
 
 
